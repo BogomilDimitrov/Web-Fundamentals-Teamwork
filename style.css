@@ -204,9 +204,19 @@ table {
 fixing bugs of the header - end (Valeri)
 */
 
+/*
+adding the background - start (Valeri)
+*/
 
+body {
+    background-image: url('subHeader.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 200px;
+}
 
-
+/*
+adding the background - end (Valeri)
+*/
 
 
 
