@@ -84,5 +84,21 @@
         </tr>
     </table>
 </header>
+<section class="contacts">
+    <h1>Контакт с нас</h1>
+    <form name="input" action="" method="get">
+        <div class="divContacts">
+            <input class="form-control title" data-val="true" data-val-length="Заглавието трябва да е между 5 и 200 символа" data-val-length-max="200" data-val-length-min="5" data-val-required="Заглавието е задължително" id="Title" name="Title" placeholder="Заглавие" type="text" value=""><br />
+            <input class="form-control email" data-val="true" data-val-length="Имейла трябва да е между 6 и 80 символа" data-val-length-max="80" data-val-length-min="6" data-val-regex="Невалиден имейл адрес." data-val-regex-pattern="^[A-Za-z0-9]+[\._A-Za-z0-9-]+@([A-Za-z0-9]+[-\.]?[A-Za-z0-9]+)+(\.[A-Za-z0-9]+[-\.]?[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" data-val-required="Имейл адресът е задължителен." id="Email" name="Email" placeholder="Е-мейл" type="text" >
+        </div>
+        <textarea class="textArea" cols="20" data-val="true" data-val-length="Съдържанието трябва между 12 и 20000 символа" data-val-length-max="20000" data-val-length-min="12" data-val-required="Съдъражнието е задължително" id="Content" name="Content" placeholder="Съдържание" rows="2"></textarea>
+        <br />
+        <div class="empty"></div>
+        <input class="submit" type="submit" value="Изпрати">
+    </form>
+    <br />
+    <h2 class="joke">За повече контакти - търсете разклонители</h2><br />
+    <img class="smiley" src="800px-Smiley.svg.png" alt="smiley">
+</section>
 </body>
 </html>
