@@ -57,7 +57,7 @@ p, ul, li, input {
 
 body {
     font-family:Calibri;
-    font-size:18px;
+    font-size:15px;
     color:white;
     font-weight:bold;
 }
@@ -190,6 +190,7 @@ table tr td form input:first-child {
 #text {
     vertical-align:top;
     border:none;
+
 }
 
 /*
@@ -199,6 +200,36 @@ fixing bugs of the header - start (Valeri)
 table {
     width: 100%;
 }
+
+table tr td:first-child img {
+    max-width: 100%;
+    padding-left: 0;
+}
+
+table tr td:first-child {
+    padding-left: 10%;
+}
+
+table tr td:nth-child(3) {
+    padding-right: 10%;
+}
+
+nav ul li:nth-child(6){
+    padding-right: 15%;
+
+}
+
+@media screen and ( max-width: 1024px ) {
+    body header table tr td:nth-child(3) form input, body header table tr td:nth-child(2)  {
+        display: none;
+    }
+    nav ul li:nth-child(6) {
+        padding-right: 0;
+    }
+    
+}
+
+
 
 /*
 fixing bugs of the header - end (Valeri)
@@ -224,7 +255,7 @@ adding style for contacts page - start (Valeri)
 
 section.contacts h1 {
     margin-top: 140px;
-    margin-left: 160px;
+    margin-left: 11%;
     color: black;
     font-size: 27px;
     font-weight: normal;
@@ -233,9 +264,10 @@ section.contacts h1 {
 
 .form-control {
     height: 40px;
-    width: 340px;
+    width: 100%;
     padding-left: 10px;
     font-size: 13px;
+    min-width: 280px;
 }
 
 .email {
@@ -244,7 +276,9 @@ section.contacts h1 {
 
 section div.divContacts {
     margin-top: 20px;
-    margin-left: 180px;
+    margin-left: 12.5%;
+    width: 24.7%;
+
     display: inline-block;
     color: black;
 }
@@ -252,20 +286,25 @@ section div.divContacts {
 textarea.textArea {
     padding: 10px;
     margin-left: 30px;
-    width: 680px;
+    width: 47.2%;
     height: 87px;
     margin-bottom: -17px;
     font-size: 13px;
+    min-width: 310px;
+    margin-top: 20px;
 }
+
 
 input.submit {
     margin-top: 20px;
-    margin-left: 0;
     height: 40px;
-    width: 703px;
+    width: 49%;
     background-color: #50a1d9;
     font-size: 15px;
     color: white;
+    min-width: 335px;
+    margin-left: 7.5%;
+
 }
 
 input.submit:hover {
@@ -290,8 +329,11 @@ h2.joke {
 
 .empty {
     display: inline-block;
-    width: 565px;
+    width: 28.2%;
     height: 50px;
+    margin-left: 3.5%;
+    min-width: 100px;
+
 }
 
 /*
@@ -307,18 +349,25 @@ adding style for forUs page - start (Valeri)
     zoom: 90%;
     margin-left: 30px;
     margin-bottom: -200px;
+    max-width: 87%;
 }
 
 section div.forUs {
-    margin-left: 180px;
     display: inline-block;
     margin-top: 30px;
     color: black;
-    width: 600px;
     height: 200px;
     font-size: 17px;
     line-height: 20px;
     font-weight: normal;
+    margin-left: 12.5%;
+    width: 44.7%;
+}
+
+@media screen and ( max-width: 512px ) {
+    section div.forUs {
+        min-width: 80%;
+    }
 }
 
 /*
