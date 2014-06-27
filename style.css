@@ -246,6 +246,7 @@ section div.divContacts {
     margin-top: 20px;
     margin-left: 180px;
     display: inline-block;
+    color: black;
 }
 
 textarea.textArea {
@@ -294,5 +295,47 @@ h2.joke {
 }
 
 /*
-adding style for contacts page - start (Valeri)
+adding style for contacts page - end (Valeri)
 */
+
+/*
+adding style for forUs page - start (Valeri)
+*/
+
+.traktor {
+    display: inline-block;
+    zoom: 90%;
+    margin-left: 30px;
+    margin-bottom: -200px;
+}
+
+section div.forUs {
+    margin-left: 180px;
+    display: inline-block;
+    margin-top: 30px;
+    color: black;
+    width: 600px;
+    height: 200px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+/*
+adding style for forUs page - end (Valeri)
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
