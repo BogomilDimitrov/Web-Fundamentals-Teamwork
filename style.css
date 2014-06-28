@@ -192,6 +192,13 @@ table tr td form input:first-child {
     border:none;
 
 }
+div{
+    transition: opacity 2s;
+}
+
+#logo:hover{
+    opacity: 0.6;
+}
 
 /*
 fixing bugs of the header - start (Valeri)
