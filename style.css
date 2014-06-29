@@ -204,8 +204,12 @@ fieldset {
     margin-bottom: 2px;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    height: 101%;
+    height: 102%;
     vertical-align: middle;
+}
+
+#text:focus {
+    outline: 0;
 }
 
 div{
