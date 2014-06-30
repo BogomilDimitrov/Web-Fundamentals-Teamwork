@@ -1,0 +1,46 @@
+footer {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    color: #ff9c00;
+    width: 100%;
+    background-color: #234465;
+}
+
+footer div {
+    margin-left: 3%;
+    width: 20%;
+}
+
+footer ul li {
+
+    list-style: none;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    cursor: pointer;
+    color: #ff9c00;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer img {
+    margin-top: 10px;
+    max-height: 15px;
+}
+
+#last {
+    position: absolute;
+    bottom: 0;
+}
