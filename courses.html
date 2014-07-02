@@ -3,47 +3,151 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/courses-styles.css"/>
+<<<<<<< HEAD
     <link rel="stylesheet" href="styles/header.css"/>
     <title>Courses</title>
 </head>
 <body>
 <header>
-    <div id="logo"> <img src="images/logo.png" /> </div>
-    <nav>
-        <ul>
-            <li><a href="news.html">НОВИНИ</a></li>
-            <li>
-                <a href="about.html">ЗА НАС</a>
-                <ul id="aboutmenu">
-                    <li><a href="tormentors.html">Мъчители</a></li>
-                    <li><a href="tools.html">Tools</a></li>
-                    <li><a href="dorms.html">Общежития</a></li>
-                    <li><a href="apply.html">Кандидатстване</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="tortuse.html">МЪЧЕНИЯ</a>
-                <ul id="tortusemenu">
-                    <li><a href="tortuse.html">Мъчения</a></li>
-                    <li><a href="certificate.html">Сертификати</a></li>
-                    <li><a href="traing.html">Train the tormentor</a></li>
-                    <li><a href="fasttrack.html">FastTrack Courses</a></li>
-                </ul>
-            </li>
-            <li><a href="job.html">РАБОТА</a></li>
-            <li><a href="contacts.html">КОНТАКТИ</a></li>
-        </ul>
-    </nav>
+    <div class="header">
+        <div class="logo">
+            <a href="https://softuni.bg" target="_blank">
+                <img alt="SoftUni logo" src="images/logo.png"/>
+            </a>
+        </div>
+        <div class="navigation-search">
+            <div>
+                <form>
+                    <input type="text" id="text" name="search" autofocus="autofocus" />
+                    <input style="background-color: white; vertical-align: middle; margin-right: 10px; zoom:113%" type="image" src="images/search.png" name="submitBtn" alt="Submit"/>
+                </form>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="news" title="news" target="_blank">НОВИНИ</a>
+                        </li>
+                        <li>
+                            <a href="#">ЗА УНИВЕРСИТЕТА &#x25BE;</a>
+                            <ul class="sub-nav-list">
+                                <li>
+                                    <a href="about" title="aboutUs" target="_blank">За нас</a>
+                                </li>
+                                <li>
+                                    <a href="professions" title="professions" target="_blank">Професии</a>
+                                </li>
+                                <li>
+                                    <a href="trainers" title="trainers" target="_blank">Преподаватели</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">ОБУЧЕНИЯ &#x25BE;</a>
+                            <ul class="sub-nav-list">
+                                <li>
+                                    <a class="sub-menu" href="list.html" title="courses" target="_blank">Курсове</a>
+                                </li>
+                                <li>
+                                    <a href="course1.html" title="course1" target="_blank">Добави курсове</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contacts" title="news" target="_blank">КОНТАКТИ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
 </header>
 <div>
     <table>
        <thead>
+=======
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){
 
-       </thead>
-        <tbody>
-        
-        </tbody>
-    </table>
+            $('a').click(function () {
+                var articlename= this.name;
+                $("#"+articlename).show("slow").siblings().hide("slow");
+            });
+
+        });
+    </script>
+    <title>Courses</title>
+</head>
+<body>
+<div id="container">
+    <aside>
+        <div>
+            <h3><a href="#" name="info">Информация за курсовете</a></h3>
+        </div>
+        <div>
+            <a href="#" name="CSharp">Трактори с агрегат C#</a>
+        </div>
+        <div>
+            <a href="#" name="Java">Трактори с агрегат Java</a>
+        </div>
+        <div><a href="#" name="HTML">HTML 5</a></div>
+        <div><a href="#" name="CSS">CSS 3</a></div>
+        <div><a href="#">Трикове и техники</a></div>
+    </aside>
+    <section id="main">
+        <header>
+            <h2>Всички курсове</h2>
+        </header>
+        <article id="info">
+            <h3>Информация за курсовете</h3>
+            <p>Нашата цел в Бустан университет е да ви дадем професия в ръцете, като с хиляди часове практика, практика
+                и пак практика ще ви научим на всички начални познания и умения, необходими за да можете да си намерите
+                работа като трактористи и аграри. Практическите занаятия наистина са широко застъпени при нас, тъй като
+                това е начинът да станете наистина добри.</p>
+
+            <p>След като ви запознаем най-общо с хардуера, необходим за обработването на селскостопанските земи, ще
+                обърнем внимание и на видовете ниви и начините, по които можете да ги стилизирате с някои допълнителни
+                техники.</p>
+        </article>
+        <article id="CSharp">
+            <h3>Трактори с агрегат C#</h3>
+            <p>Тракторите C#(C-Sharp) са изключително мощни и същевременно лесни за употреба. Развивани от Микромек
+                Корпорейшън,
+                тe имат лесно за употреба контролно табло, като с тях се оре бързо и приятно. Като основен техен
+                недостатък можем да отбележим тяхното ограничено приложение. Тъй като са затворена платформа, те
+                използват само един вид гуми и могат да бъдат използвани само върху ниви с черноземи почви. </p>
+        </article>
+        <article id="Java">
+            <h3>Трактори с агрегат Java</h3>
+            <p>Тракторите Java са широко разпространени с поне 10 милиона ползватели по света. Въпреки, че се развиват
+                малко по-бавно от тези с агрегат на C# все пак те имат предимство що се отнася до тяхната практически
+                неограничена област на приложение. Могат да бъдат "рънвани" на абсолютно всякакви ниви и видове
+                почви. Ние ще ви обучаваме на Java трактори версия 1.8, тъй като е важно да сте в крак с новите
+                технологии и да сте запознати с новостите в развитието на Java тракторите.</p>
+
+            <p>Друго важно предимство на Java тракторите е, че потребителите по целия свят могат свободно да модифицират
+                своите машини и да ги ъпгрейдват безплатно с най-различни приставки, с които всеки аграр може да улесни
+                своята сеидба и жътва.</p>
+        </article>
+        <article id="HTML">
+            <h3>HTML 5</h3>
+            <p>HTML 5 е важен курс, в който ще ви научим на основните компоненти на една архитектурно качествено
+                изградена нива. Ще се запознаете с различните формати на лехите, на новите технологии за напояване,
+                поддържани от последната генерация HTML 5 ниви, както и ще разберете кои технологии вече не е
+                препоръчително да използвате при изграждането на скелето на нивите си.</p>
+>>>>>>> c04514432f0163f8ad6d2f7c32ef057c6d451366
+
+            <p>Препоръчително е техниките, които ще научите в този курс да използвате само за изграждане на съдържанието
+                на вашите ниви и поля, а изгледът да оставите на CSS, с който ще се запознаете в следващия курс.</p>
+        </article>
+        <article id="CSS">
+            <h3>CSS 3</h3>
+            <p>В курса по CSS ще разберете как най-добре да форматирате изгледа на вече изградената си нива. Както ще
+                разберете в хода на курса, с тези техники можете да създавате най-различни изгледи на полята си. Можете
+                да направите една картофена нива да изглежда като морава с люцерна и обратно. Това е частта в обучението ви, където ще можете да изявите вашите дизайнерски наклонности и влечения.</p>
+        </article>
+    </section>
 </div>
 </body>
 </html>
