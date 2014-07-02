@@ -401,8 +401,17 @@ section div.forUs {
 adding style for forUs page - end (Valeri)
 */
 
+#wrapper {
+    position: relative;
+}
 
+html, body {
+    height: 100%;
+}
 
+#body {
+    height: 80%;
+}
 
 
 

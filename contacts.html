@@ -1,4 +1,4 @@
-a<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Contacts</title>
@@ -54,29 +54,30 @@ a<!DOCTYPE html>
         </div>
     </div>
 </header>
-<section class="contacts">
-    <h1>Контакт с нас</h1>
-    <form name="input" action="" method="get">
-        <div class="divContacts">
-            <input class="form-control title" data-val="true" data-val-length="Заглавието трябва да е между 5 и 200 символа" data-val-length-max="200" data-val-length-min="5" data-val-required="Заглавието е задължително" id="Title" name="Title" placeholder="Заглавие" type="text" value=""><br />
-            <input class="form-control email" data-val="true" data-val-length="Имейла трябва да е между 6 и 80 символа" data-val-length-max="80" data-val-length-min="6" data-val-regex="Невалиден имейл адрес." data-val-regex-pattern="^[A-Za-z0-9]+[\._A-Za-z0-9-]+@([A-Za-z0-9]+[-\.]?[A-Za-z0-9]+)+(\.[A-Za-z0-9]+[-\.]?[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" data-val-required="Имейл адресът е задължителен." id="Email" name="Email" placeholder="Е-мейл" type="text" >
-        </div>
-        <textarea class="textArea" cols="20" data-val="true" data-val-length="Съдържанието трябва между 12 и 20000 символа" data-val-length-max="20000" data-val-length-min="12" data-val-required="Съдъражнието е задължително" id="Content" name="Content" placeholder="Съдържание" rows="2"></textarea>
+<div id="body">
+    <section class="contacts">
+        <h1>Контакт с нас</h1>
+        <form name="input" action="" method="get">
+            <div class="divContacts">
+                <input class="form-control title" data-val="true" data-val-length="Заглавието трябва да е между 5 и 200 символа" data-val-length-max="200" data-val-length-min="5" data-val-required="Заглавието е задължително" id="Title" name="Title" placeholder="Заглавие" type="text" value=""><br />
+                <input class="form-control email" data-val="true" data-val-length="Имейла трябва да е между 6 и 80 символа" data-val-length-max="80" data-val-length-min="6" data-val-regex="Невалиден имейл адрес." data-val-regex-pattern="^[A-Za-z0-9]+[\._A-Za-z0-9-]+@([A-Za-z0-9]+[-\.]?[A-Za-z0-9]+)+(\.[A-Za-z0-9]+[-\.]?[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" data-val-required="Имейл адресът е задължителен." id="Email" name="Email" placeholder="Е-мейл" type="text" >
+            </div>
+            <textarea class="textArea" cols="20" data-val="true" data-val-length="Съдържанието трябва между 12 и 20000 символа" data-val-length-max="20000" data-val-length-min="12" data-val-required="Съдъражнието е задължително" id="Content" name="Content" placeholder="Съдържание" rows="2"></textarea>
+            <br />
+            <div class="empty"></div>
+            <input class="submit" type="submit" value="Изпрати">
+        </form>
         <br />
-        <div class="empty"></div>
-        <input class="submit" type="submit" value="Изпрати">
-    </form>
-    <br />
-    <h2 class="joke">За повече контакти - търсете разклонители</h2><br />
-    <img class="smiley" src="images/razklonitel.jpg" alt="smiley">
-</section>
-<footer>
+        <h2 class="joke">За повече контакти - търсете разклонители</h2><br />
+        <img class="smiley" src="images/razklonitel.jpg" alt="smiley">
+    </section>
+    <footer>
         <div>
             <h4>За Уни<wbr>верси<wbr>тета</h4>
             <ul>
-                <li><a href="aboutus.html">За нас</a></li>
-                <li><a href="courses.html">Курсове</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="https://softuni.bg">За нас</a></li>
+                <li><a href="https://softuni.bg/trainings/courses/list">Курсове</a></li>
+                <li><a href="https://softuni.bg/contacts">Контакти</a></li>
             </ul>
         </div>
         <div>
@@ -88,15 +89,21 @@ a<!DOCTYPE html>
             </ul>
         </div>
         <div>
-            <h4>Бустан Университет Limited Entertainment</h4>
+            <h4 id="bustan">Бустан Университет Limited Entertainment</h4>
             <span>© 1500-2014 - Bustan University. All Rights Reserved.</span>
+            <span>© 1500-2014 - Бустан Университет. Всички права запазени.</span>
         </div>
-        <br/>
         <div id="last">
-            <a href="http://validator.w3.org"><img src="images/wc3-html.png" alt="html validate"/></a>
+            <a href="https://twitter.com/softunibg"><span class="socials1"></span></a>
+            <a href="https://www.facebook.com/SoftwareUniversity"><span class="socials2"></span></a>
+            <a href="https://plus.google.com/+SoftuniBg"><span class="socials3"></span></a>
             <br/>
-            <a href="http://css-validator.org"><img src="images/wc3-css.png" alt="css validate"/></a>
+            <a href="http://validator.w3.org"><img src="images/valid-html5.png" alt="html validate"/></a>
+            <br/>
+            <a href="http://css-validator.org"><img src="images/valid_css.png" alt="css validate"/></a>
         </div>
     </footer>
+</div>
+
 </body>
 </html>
