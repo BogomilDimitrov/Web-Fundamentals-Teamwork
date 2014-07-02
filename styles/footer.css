@@ -72,3 +72,9 @@ footer img {
     height: 25px;
     margin-left: 2px;
 }
+
+@media screen and (max-width: 800px) {
+    div {
+
+    }
+}
