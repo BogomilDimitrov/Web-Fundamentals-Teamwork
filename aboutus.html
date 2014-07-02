@@ -2,23 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>For Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+	<link rel="stylesheet" href="styles/header.css" />
     <meta charset="UTF-8">
 </head>
 <body>
 <header>
     <table>
         <tr>
-            <td rowspan="2" class="tdLogo">
-                <a href="https://softuni.bg" target="_blank"><img class="logo" alt="SoftUni logo" src="https://softuni.bg/Content/design/logo.png"/></a>
+            <td rowspan="2">
+                <div id="logo"><a href="https://softuni.bg" target="_blank"><img alt="SoftUni logo" src="images/logo.png"/></a></div>
             </td>
             <td>
-                <img src="user.png" alt="notifications icon and user" />
+                <img src="images/user.png" alt="notifications icon and user" />
             </td>
-            <td class="tdSearch">
+            <td>
                 <form>
                     <input type="text" id="text" name="search" autofocus="autofocus" />
-                    <input class="lense" style="background-color: white; vertical-align: middle" type="image" src="https://softuni.bg/Content/design/magn-glass-icon17.png" name="submitBtn" alt="Submit"/>
+                    <input style="background-color: white; vertical-align: middle; margin-right: 10px" type="image" src="images/search.png" name="submitBtn" alt="Submit"/>
                 </form>
             </td>
         </tr>
@@ -33,7 +34,7 @@
                             <a href="#">ЗА УНИВЕРСИТЕТА &#x25BE;</a>
                             <ul class="sub-nav-list">
                                 <li>
-                                    <a href="forUs.html" title="aboutUs" >За нас</a>
+                                    <a href="about" title="aboutUs" target="_blank">За нас</a>
                                 </li>
                                 <li>
                                     <a href="professions" title="professions" target="_blank">Професии</a>
@@ -75,8 +76,8 @@
                         <li>
                             <a href="forum" title="news" target="_blank">ФОРУМ</a>
                         </li>
-                        <li  class="tdContacts">
-                            <a href="contacts.html" title="news">КОНТАКТИ</a>
+                        <li>
+                            <a href="contacts" title="news" target="_blank">КОНТАКТИ</a>
                         </li>
                     </ul>
                 </nav>
@@ -84,12 +85,13 @@
         </tr>
     </table>
 </header>
+
 <section class="contacts">
     <h1>Бустан университет</h1>
         <div class="forUs">
             За нас, както и за цялата аграрна индустрия, е най-важен практическият опит. Нашата мисия е да направим хората, които обучаваме, истински фермери и да им съдействаме в намирането на работа. 
         </div>
-        <img class="traktor" src="traktor_ivictus.jpg" alt="traktor">
+        <img class="traktor" src="images/traktor_ivictus.jpg" alt="traktor">
 </section>
 </body>
 </html>
