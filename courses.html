@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/courses-styles.css"/>
     <link rel="stylesheet" href="styles/header-div.css"/>
+    <link rel="stylesheet" href="styles/footer.css"/>
     <title>Courses</title>
 </head>
 <body>
@@ -61,23 +62,9 @@
         </div>
     </div>
 </header>
-<div>
-    <table>
-       <thead>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script>
-        $(document).ready(function(){
-
-            $('a').click(function () {
-                var articlename= this.name;
-                $("#"+articlename).show("slow").siblings().hide("slow");
-            });
-
-        });
-    </script>
-    <title>Courses</title>
-</head>
-<body>
+</div>
+</header>
+<img src="images/traktor_0004.gif" alt="Nakov-ore"/>
 <div id="container">
     <aside>
         <div>
@@ -107,6 +94,7 @@
             <p>След като ви запознаем най-общо с хардуера, необходим за обработването на селскостопанските земи, ще
                 обърнем внимание и на видовете ниви и начините, по които можете да ги стилизирате с някои допълнителни
                 техники.</p>
+        </article>
         </article>
         <article id="CSharp">
             <h3>Трактори с агрегат C#</h3>
@@ -145,6 +133,34 @@
                 да направите една картофена нива да изглежда като морава с люцерна и обратно. Това е частта в обучението ви, където ще можете да изявите вашите дизайнерски наклонности и влечения.</p>
         </article>
     </section>
+    <footer>
+        <div>
+            <h4>За Уни<wbr>верси<wbr>тета</h4>
+            <ul>
+                <li><a href="https://softuni.bg">За нас</a></li>
+                <li><a href="https://softuni.bg/trainings/courses/list">Курсове</a></li>
+                <li><a href="https://softuni.bg/contacts">Контакти</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Нашите приятели</h4>
+            <ul>
+                <li><a href="http://www.au-plovdiv.bg/">Аграрен Универ<wbr>ситет Пловдив</a></li>
+                <li><a href="http://www.uni-sz.bg/">Тракийски универ<wbr>ситет</a></li>
+                <li><a href="http://tractor.bg/">Tractor power</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Бустан Университет Limited Entertainment</h4>
+            <span>© 1500-2014 - Bustan University. All Rights Reserved.</span>
+        </div>
+        <br/>
+        <div id="last">
+            <a href="http://validator.w3.org"><img src="images/wc3-html.png" alt="html validate"/></a>
+            <br/>
+            <a href="http://css-validator.org"><img src="images/wc3-css.png" alt="css validate"/></a>
+        </div>
+    </footer>
 </div>
 </body>
 </html>
