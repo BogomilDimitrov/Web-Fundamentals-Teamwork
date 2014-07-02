@@ -1,47 +1,71 @@
-footer {
-    position: absolute;
-    bottom: -200px;
-    display: flex;
-    flex-flow: row wrap;
-    color: #ff9c00;
+html, body {
+    background-color: #EEEEEE;
+    height: 100%;
+}
+
+#container {
+    font-family: Tahoma;
+    position: relative;
     width: 100%;
-    background-color: #76C043;
+    height: 100%;
 }
 
-footer div {
-    margin-left: 3%;
-    width: 20%;
+aside {
+    border-radius: 2%;
+    margin-top: 5%;
+    position: absolute;
+    left: 5%;
+    background-color: rgba(118, 192, 67, 0.5);
+    width: 25%;
 }
 
-footer ul li {
-
-    list-style: none;
-}
-
-footer ul {
-    padding-left: 0;
-}
-
-footer a {
+aside a {
+    font-size: 16px;
     text-decoration: none;
     color: #fff;
 }
 
-footer a:hover {
-    cursor: pointer;
-    color: #ff9c00;
+aside div {
+    padding: 5px;
+    border-bottom: 1px dashed #fff;
+    margin: 5px;
 }
 
-footer span {
-    color: #fff;
+aside a:hover, aside div:hover {
+    color: #FF9C00;
 }
 
-footer img {
-    margin-top: 10px;
-    max-height: 15px;
+h3 a {
+    color: #FF9C00;
 }
 
-#last {
+section {
+    height: 80%;
+    color: #000;
+    margin-top: 5%;
+    border: 1px solid #000;
     position: absolute;
-    bottom: 0;
+    width: 60%;
+    min-height: 20%;
+    right: 5%;
+    overflow: hidden;
 }
+
+    section header {
+        color: #5A5A5A;
+        padding-left: 5px;
+        font-size: 25px;
+    }
+
+    section article {
+        display: none;
+        margin: 0 auto;
+        min-width: 200px;
+        width: 80%;
+        height: 80%;
+    }
+
+
+    section p {
+        border: 1px solid;
+    }
