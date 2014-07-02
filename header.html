@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <title>Website Header</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/header-div.css"/>
+    <meta charset="utf-8"/>
 </head>
 <body>
-<header>
-    <table>
-        <tr>
-            <td rowspan="2">
-                <div id="logo"><a href="https://softuni.bg" target="_blank"><img alt="SoftUni logo" src="images/logo.png"/></a></div>
-            </td>
-            <td>
-                <img src="images/user.png" alt="notifications icon and user" />
-            </td>
-            <td>
+<<header>
+    <div class="header">
+        <div class="logo">
+            <a href="https://softuni.bg" target="_blank">
+                <img alt="SoftUni logo" src="images/logo.png"/>
+            </a>
+        </div>
+        <div class="navigation-search">
+            <div>
                 <form>
-                    <fieldset>
-                        <input type="text" id="text" name="search" autofocus="autofocus" placeholder="Търсене"/>
-                        <input id="searchbutton" type="image" src="images/search.png" name="submitBtn" alt="Submit"/>
-                    </fieldset>
+                    <input type="text" id="text" name="search" autofocus="autofocus" />
+                    <input style="background-color: white; vertical-align: middle; margin-right: 10px; zoom:113%" type="image" src="images/search.png" name="submitBtn" alt="Submit"/>
                 </form>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
+            </div>
+            <div>
                 <nav>
                     <ul>
                         <li>
@@ -41,19 +35,7 @@
                                     <a href="professions" title="professions" target="_blank">Професии</a>
                                 </li>
                                 <li>
-                                    <a href="plans" title="plans" target="_blank">Планове</a>
-                                </li>
-                                <li>
-                                    <a href="partner-universities" title="partners" target="_blank">Университети-партньори</a>
-                                </li>
-                                <li>
                                     <a href="trainers" title="trainers" target="_blank">Преподаватели</a>
-                                </li>
-                                <li>
-                                    <a href="dorms" title="dorms" target="_blank">Общежития</a>
-                                </li>
-                                <li>
-                                    <a href="apply" title="apply" target="_blank">Кандидатстване</a>
                                 </li>
                             </ul>
                         </li>
@@ -61,30 +43,21 @@
                             <a href="#">ОБУЧЕНИЯ &#x25BE;</a>
                             <ul class="sub-nav-list">
                                 <li>
-                                    <a class="sub-menu" href="courses.html" title="courses" target="_blank">Курсове</a>
+                                    <a class="sub-menu" href="list.html" title="courses" target="_blank">Курсове</a>
                                 </li>
                                 <li>
-                                    <a class="sub-menu" href="fasttracks" title="fast track" target="_blank">Fast track курсове</a>
-                                </li>
-                                <li>
-                                    <a href="seminars/list" title="seminars" target="_blank">Семинари</a>
+                                    <a href="course1.html" title="course1" target="_blank">Добави курсове</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="companies" title="news" target="_blank">ЗА ФИРМИ</a>
-                        </li>
-                        <li>
-                            <a href="forum" title="news" target="_blank">ФОРУМ</a>
                         </li>
                         <li>
                             <a href="contacts" title="news" target="_blank">КОНТАКТИ</a>
                         </li>
                     </ul>
                 </nav>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
+    </div>
 </header>
 </body>
 </html>
