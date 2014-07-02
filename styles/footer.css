@@ -1,11 +1,12 @@
 footer {
     position: absolute;
-    bottom: -200px;
+    bottom: -100px;
     display: flex;
     flex-flow: row wrap;
     color: #ff9c00;
     width: 100%;
-    background-color: #76C043;
+    background: url("../images/grass_8.jpg") repeat-x center;
+    background-size: contain;
 }
 
 footer div {
@@ -43,5 +44,31 @@ footer img {
 
 #last {
     position: absolute;
-    bottom: 0;
+    bottom: 2%;
+}
+
+.socials1 {
+     display: inline-block;
+     background: url("../images/twitter.png") no-repeat center;
+     background-size: cover;
+     width: 25px;
+     height: 25px;
+ }
+
+.socials2 {
+    display: inline-block;
+    background: url("../images/facebook.png") no-repeat center;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 2px;
+}
+
+.socials3 {
+    display: inline-block;
+    background: url("../images/google+.png") no-repeat center;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-left: 2px;
 }

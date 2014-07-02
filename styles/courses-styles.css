@@ -43,7 +43,6 @@ section {
     height: 80%;
     color: #000;
     margin-top: 5%;
-    border: 1px solid #000;
     position: absolute;
     width: 60%;
     min-height: 20%;
@@ -51,13 +50,8 @@ section {
     overflow: hidden;
 }
 
-    section header {
-        color: #5A5A5A;
-        padding-left: 5px;
-        font-size: 25px;
-    }
-
     section article {
+        border-radius: 10%;
         display: none;
         margin: 0 auto;
         min-width: 200px;
@@ -65,7 +59,32 @@ section {
         height: 80%;
     }
 
+    section div {
+        border: 3px solid green;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 10%;
+        background: url("../images/Grass-Slider-Background1.png") no-repeat center,
+        linear-gradient(to top, #ffffff 40%, #0000ff);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        opacity: 0.3;
+
+    }
+
+    section h3 {
+        position: absolute;
+        top: 5%;
+        left: 14%;
+    }
 
     section p {
-        border: 1px solid;
+        line-height: 1.5;
+        overflow: hidden;
+        position: relative;
+        top: -82%;
+        margin: 15px auto;
+        width: 90%;
     }
