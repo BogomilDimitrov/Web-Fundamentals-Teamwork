@@ -2,6 +2,17 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('a').click(function () {
+                var articlename= this.name;
+                $("#"+articlename).show("fast").siblings().hide("fast");
+            });
+
+        });
+    </script>
     <link rel="stylesheet" href="styles/courses-styles.css"/>
     <link rel="stylesheet" href="styles/header-div.css"/>
     <link rel="stylesheet" href="styles/footer.css"/>
