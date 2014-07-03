@@ -6,12 +6,12 @@ html, body {
 body {
     background-image: url('../images/subHeader.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 180px; font-family:Calibri;
+    background-size: 100% 180px;
+    font-family: Tahoma;
 }
 
 #container {
     margin-top: 50px;
-    font-family: Tahoma;
     position: relative;
     width: 100%;
     height: 80%;
@@ -19,10 +19,10 @@ body {
 
 aside {
     border-radius: 2%;
-    margin-top: 5%;
+    margin-top: 8%;
     position: absolute;
     left: 5%;
-    background-color: rgba(118, 192, 67, 0.5);
+    background-color: rgba(118, 192, 67, 0.7);
     width: 25%;
 }
 
@@ -42,14 +42,10 @@ aside a:hover, aside div:hover {
     color: #FF9C00;
 }
 
-h3 a {
-    color: #FF9C00;
-}
-
 section {
     height: 80%;
     color: #000;
-    margin-top: 5%;
+    margin-top: 8%;
     position: absolute;
     width: 60%;
     min-height: 20%;
@@ -95,4 +91,23 @@ section {
         top: -82%;
         margin: 15px auto;
         width: 90%;
+    }
+
+    @media screen and (max-width: 750px) {
+        aside {
+            margin-top:20%;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        section {
+            margin-top: 20%;
+        }
+
+        aside a {
+
+            font-size: 12px;
+        }
     }
